@@ -16,6 +16,7 @@
 		0003369F202B47CD00089DFB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003369E202B47CD00089DFB /* MessageViewController.swift */; };
 		000336A1202B47DA00089DFB /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000336A0202B47DA00089DFB /* DiscoverViewController.swift */; };
 		000336A3202B47E600089DFB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000336A2202B47E600089DFB /* ProfileViewController.swift */; };
+		000336A5202B4B2800089DFB /* Bundle-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000336A4202B4B2800089DFB /* Bundle-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0003369E202B47CD00089DFB /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		000336A0202B47DA00089DFB /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		000336A2202B47E600089DFB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		000336A4202B4B2800089DFB /* Bundle-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		0003368E202B461000089DFB /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				000336A4202B4B2800089DFB /* Bundle-Extension.swift */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0003369D202B47BF00089DFB /* HomeViewController.swift in Sources */,
+				000336A5202B4B2800089DFB /* Bundle-Extension.swift in Sources */,
 				0003367B202B3FBD00089DFB /* AppDelegate.swift in Sources */,
 				000336A1202B47DA00089DFB /* DiscoverViewController.swift in Sources */,
 				0003369B202B479800089DFB /* BaseViewController.swift in Sources */,
