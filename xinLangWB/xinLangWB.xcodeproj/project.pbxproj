@@ -8,19 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0003367B202B3FBD00089DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003367A202B3FBD00089DFB /* AppDelegate.swift */; };
-		0003367D202B3FBD00089DFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0003367C202B3FBD00089DFB /* ViewController.swift */; };
-		00033680202B3FBD00089DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0003367E202B3FBD00089DFB /* Main.storyboard */; };
 		00033682202B3FBD00089DFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00033681202B3FBD00089DFB /* Assets.xcassets */; };
-		00033685202B3FBD00089DFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00033683202B3FBD00089DFB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00033677202B3FBD00089DFB /* xinLangWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xinLangWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0003367A202B3FBD00089DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0003367C202B3FBD00089DFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0003367F202B3FBD00089DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00033681202B3FBD00089DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00033684202B3FBD00089DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00033686202B3FBD00089DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,10 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				0003367A202B3FBD00089DFB /* AppDelegate.swift */,
-				0003367C202B3FBD00089DFB /* ViewController.swift */,
-				0003367E202B3FBD00089DFB /* Main.storyboard */,
 				00033681202B3FBD00089DFB /* Assets.xcassets */,
-				00033683202B3FBD00089DFB /* LaunchScreen.storyboard */,
 				00033686202B3FBD00089DFB /* Info.plist */,
 			);
 			path = xinLangWB;
@@ -123,9 +114,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00033685202B3FBD00089DFB /* LaunchScreen.storyboard in Resources */,
 				00033682202B3FBD00089DFB /* Assets.xcassets in Resources */,
-				00033680202B3FBD00089DFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +125,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0003367D202B3FBD00089DFB /* ViewController.swift in Sources */,
 				0003367B202B3FBD00089DFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0003367E202B3FBD00089DFB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0003367F202B3FBD00089DFB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		00033683202B3FBD00089DFB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				00033684202B3FBD00089DFB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00033687202B3FBD00089DFB /* Debug */ = {
@@ -274,9 +243,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U6SKQ55KP;
 				INFOPLIST_FILE = xinLangWB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wushixing.xinLangWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,9 +260,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U6SKQ55KP;
 				INFOPLIST_FILE = xinLangWB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wushixing.xinLangWB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
