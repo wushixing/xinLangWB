@@ -22,10 +22,10 @@ extension MainViewController {
     private func setupChildControllers() {
         
         let array = [
-            ["clsName": "HomeViewController", "title": "首页", "imageName": ""],
-            ["clsName": "MessageViewController", "title": "消息", "imageName": ""],
-            ["clsName": "DiscoverViewController", "title": "发现", "imageName": ""],
-            ["clsName": "ProfileViewController", "title": "我", "imageName": ""]
+            ["clsName": "HomeViewController", "title": "首页", "imageName": "home"],
+            ["clsName": "MessageViewController", "title": "消息", "imageName": "message_center"],
+            ["clsName": "DiscoverViewController", "title": "发现", "imageName": "discover"],
+            ["clsName": "ProfileViewController", "title": "我", "imageName": "profile"]
         ]
         
         var arrayM = [UIViewController]()
@@ -48,6 +48,9 @@ extension MainViewController {
         let vc = cls.init()
         
         vc.title = title
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
+        vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_selected")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.setTitleTextAttributes([.foregroundColor: UIColor.darkGray], for: .highlighted)
         
         let nav = NavigationController(rootViewController: vc)
         
