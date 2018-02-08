@@ -9,11 +9,13 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    /// 设置点击事件，显示好友
+    @objc private func showFriends() {
+        
+        let vc = DemoViewController()
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -21,5 +23,7 @@ extension HomeViewController {
     
     override func setupUI() {
         super.setupUI()
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "好友", style: .plain, target: self, action: #selector(showFriends))
     }
 }
