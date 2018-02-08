@@ -15,6 +15,23 @@ class MainViewController: UITabBarController {
 
         setupChildControllers()
     }
+    
+    // MARK: - 创建私有控件
+    /// 1.撰写按钮
+    private lazy var composeButton: UIButton = {
+        let btn = UIButton()
+        let count = CGFloat(childViewControllers.count)
+        let tabBarW = kScreenW / count - 1
+        btn.frame = tabBar.bounds.insetBy(dx: tabBarW * 2, dy: 0)
+        btn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .normal)
+        btn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), for: .normal)
+        return btn
+    }()
+    
+    // 创建按钮的点击事件
+    @objc private func composeStatus() {
+        print("撰写按钮")
+    }
 }
 
 extension MainViewController {
@@ -24,6 +41,7 @@ extension MainViewController {
         let array = [
             ["clsName": "HomeViewController", "title": "首页", "imageName": "home"],
             ["clsName": "MessageViewController", "title": "消息", "imageName": "message_center"],
+            ["clsName": "UIViewController"],
             ["clsName": "DiscoverViewController", "title": "发现", "imageName": "discover"],
             ["clsName": "ProfileViewController", "title": "我", "imageName": "profile"]
         ]
@@ -35,6 +53,10 @@ extension MainViewController {
         }
         
         viewControllers = arrayM
+        
+        // 2.将撰写按钮添加到 tabBar
+        tabBar.addSubview(composeButton)
+        composeButton.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
     }
     
     private func controller(dict: [String: String]) -> UIViewController {

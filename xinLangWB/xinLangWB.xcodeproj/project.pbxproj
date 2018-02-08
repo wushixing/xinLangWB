@@ -17,6 +17,8 @@
 		000336A1202B47DA00089DFB /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000336A0202B47DA00089DFB /* DiscoverViewController.swift */; };
 		000336A3202B47E600089DFB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000336A2202B47E600089DFB /* ProfileViewController.swift */; };
 		000336A5202B4B2800089DFB /* Bundle-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000336A4202B4B2800089DFB /* Bundle-Extension.swift */; };
+		0048D2E5202BE6E500387F5C /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048D2E4202BE6E500387F5C /* UIColor-Extention.swift */; };
+		0048D2E7202BF4F700387F5C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048D2E6202BF4F700387F5C /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		000336A0202B47DA00089DFB /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		000336A2202B47E600089DFB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		000336A4202B4B2800089DFB /* Bundle-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Extension.swift"; sourceTree = "<group>"; };
+		0048D2E4202BE6E500387F5C /* UIColor-Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
+		0048D2E6202BF4F700387F5C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				000336A4202B4B2800089DFB /* Bundle-Extension.swift */,
+				0048D2E4202BE6E500387F5C /* UIColor-Extention.swift */,
+				0048D2E6202BF4F700387F5C /* Common.swift */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -233,6 +239,8 @@
 				000336A5202B4B2800089DFB /* Bundle-Extension.swift in Sources */,
 				0003367B202B3FBD00089DFB /* AppDelegate.swift in Sources */,
 				000336A1202B47DA00089DFB /* DiscoverViewController.swift in Sources */,
+				0048D2E7202BF4F700387F5C /* Common.swift in Sources */,
+				0048D2E5202BE6E500387F5C /* UIColor-Extention.swift in Sources */,
 				0003369B202B479800089DFB /* BaseViewController.swift in Sources */,
 				00033699202B478000089DFB /* NavigationController.swift in Sources */,
 				0003369F202B47CD00089DFB /* MessageViewController.swift in Sources */,
