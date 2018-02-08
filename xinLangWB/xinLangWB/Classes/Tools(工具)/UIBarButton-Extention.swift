@@ -10,12 +10,16 @@ import UIKit
 
 extension UIBarButtonItem {
     
-    convenience init(title: String,target: AnyObject,action: Selector) {
+    convenience init(title: String,target: AnyObject,action: Selector,isBack: Bool = false) {
         let btn = UIButton()
         btn.setTitle(title, for: .normal)
         btn.setTitleColor(UIColor.darkGray, for: .normal)
         btn.setTitleColor(UIColor.orange, for: .highlighted)
         btn.addTarget(target, action: action, for: .touchUpInside)
+        
+        if isBack {
+            btn.setImage(UIImage(named: "tableTipBtn"), for: .normal)
+        }
         
         self.init(customView: btn)
     }

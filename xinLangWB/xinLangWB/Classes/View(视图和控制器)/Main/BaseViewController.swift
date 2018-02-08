@@ -17,10 +17,13 @@ class BaseViewController: UIViewController {
     }
 }
 
+
+// MARK: - 设置界面
 extension BaseViewController {
     
     @objc func setupUI() {
         
         view.backgroundColor = UIColor().randomColor
+        
     }
 }
